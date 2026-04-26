@@ -14,7 +14,7 @@ class _SplashviewState extends State<Splashview> {
     super.initState();
     Future.delayed(
       Duration(seconds: 2),
-      () => Navigator.push(
+      () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => HomeView()),
       ),
