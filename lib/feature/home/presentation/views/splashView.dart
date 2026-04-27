@@ -12,13 +12,7 @@ class _SplashviewState extends State<Splashview> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(
-      Duration(seconds: 2),
-      () => Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => HomeView()),
-      ),
-    );
+    splashNavigation();
   }
 
   @override
@@ -26,6 +20,16 @@ class _SplashviewState extends State<Splashview> {
     return Scaffold(
       body: Center(
         child: Icon(Icons.newspaper_sharp, size: 64, color: Colors.black),
+      ),
+    );
+  }
+
+  Future<dynamic> splashNavigation() {
+    return Future.delayed(
+      Duration(seconds: 2),
+      () => Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeView()),
       ),
     );
   }
