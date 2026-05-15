@@ -1,0 +1,34 @@
+# flavors:
+#   dev:
+#     app:
+#       name: "My App Dev"
+
+#     android:
+#       applicationId: "com.example.myapp.dev"
+
+#   staging:
+#     app:
+#       name: "My App Staging"
+
+#     android:
+#       applicationId: "com.example.myapp.staging"
+
+#   production:
+#     app:
+#       name: "My App"
+
+#     android:
+#       applicationId: "com.example.myapp"
+
+flavors:
+  dev:
+    app:
+      name: "My App Dev"
+
+  staging:
+    app:
+      name: "My App Staging"
+
+  production:
+    app:
+      name: "My App"
